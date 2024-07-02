@@ -1,0 +1,173 @@
+/* Réinitialisation CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1f1f1f;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+#hero {
+    height: 100vh;
+    background: url('path/to/hero-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero .hero-content {
+    max-width: 800px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#hero .cta {
+    padding: 0.5rem 2rem;
+    background-color: #ff9800;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#hero .cta:hover {
+    background-color: #e68a00;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+#about {
+    background-color: #1f1f1f;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about .btn {
+    padding: 0.5rem 2rem;
+    background-color: #ff9800;
+    color: #121212;
+    text-decoration:
+1. **Couleurs et Polices** : Le thème sombre utilise principalement des nuances de gris foncé et de noir pour les arrière-plans, et des nuances plus claires pour le texte. Utilisez une ou deux couleurs vives pour les éléments interactifs (comme les boutons et les liens). Par exemple, ici nous avons utilisé #ff9800 pour les boutons et les liens survolés.
+
+2. **Typographie** : La police de caractères est importante pour la lisibilité et l'esthétique globale. Vous pouvez remplacer `'Arial', sans-serif` par une police de caractères de Google Fonts, par exemple `'Roboto', sans-serif` ou `'Lato', sans-serif`.
+
+3. **Espacement** : Assurez-vous d'avoir suffisamment d'espaces entre les sections et les éléments pour éviter que le contenu ne paraisse trop encombré. Les marges et les paddings aident à structurer visuellement le contenu.
+
+4. **Interactivité** : Ajoutez des effets de survol (hover effects) aux éléments interactifs comme les boutons et les liens pour améliorer l'expérience utilisateur. Les transitions peuvent rendre ces interactions plus fluides.
+
+### **CSS (styles.css) Complémentaire**
+
+```css
+/* Transition pour les effets de survol */
+a, button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Espacement entre les sections */
+section {
+    padding: 4rem 2rem;
+}
+
+/* Styles pour les images dans le portfolio */
+#portfolio .project img {
+    transition: transform 0.3s ease;
+}
+
+#portfolio .project img:hover {
+    transform: scale(1.05);
+}
+
+/* Styles pour les témoignages */
+#testimonials blockquote {
+    padding: 2rem;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+}
+
+/* Espacement dans le formulaire de contact */
+#contact form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+/* Espacement dans le pied de page */
+footer {
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
